@@ -14,10 +14,7 @@ class Factorial {
     }
 
     public static String subResult(int input, int start, int end) {
-        BigInteger sum = new BigInteger("1");
-        for (int i = input; i > 0; i--) {
-            sum = sum.multiply(BigInteger.valueOf(i));
-        }
+        BigInteger sum = Factorial.result(input);
         String temp = sum.toString().substring(start, end);
         return temp;
 
